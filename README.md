@@ -80,13 +80,13 @@ dir='C:\Users\dohorsth\Documents\GitHub\Speech-in-noise-pipeline\test\testsubjec
     - Select everything but the headers from column D and E. Copy this into SPSS.  
     ![select all data](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel.PNG)
     - In SPSS select "Descriptive Statistics" --> "Frequencies..."
-    [![SPSS dropdown][spss-dropdown]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/spss_analysis.PNG)
+    [![SPSS dropdown](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/spss_analysis.PNG)
     - copy from the first spss frequency table the first and second column, to column G and H in excel.
-    [![SPSS dropdown][spss-dropdown]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/var002.png)
+    ![SPSS dropdown](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/var002.PNG)
     - Do the same for the second frequency table, but make sure that you skip what you need to skip (in the example there are not correct responses for 17.00).
-    [![SPSS dropdown][spss-dropdown]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/var003.png)
+    ![SPSS dropdown](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/var003.PNG)
     - Add everything to excel and calculate correct percentages. You can use the formula: =(I2/H2)*100 and pull it down.
-    [![SPSS dropdown][spss-dropdown]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel_final.png)
+    ![SPSS dropdown](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel_final.PNG)
 7. repeat for each individual dataset.
 
 <!-- LICENSE -->
