@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/">
-    <img src="images/logo.JPEG" alt="Logo" width="286" height="120">
+    <img src="images/logo.jpeg" alt="Logo" width="286" height="120">
   </a> 
 
 <h3 align="center">Speech-in-noise pipeline</h3>
@@ -78,7 +78,7 @@ dir='C:\Users\dohorsth\Documents\GitHub\Speech-in-noise-pipeline\test\testsubjec
         - If you do this, make sure to also add the noise level to the column for correct responses.
 6. Use SPSS to create the final data.
     - Select everything but the headers from column D and E. Copy this into SPSS.  
-    [![select all data][select-all-data]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel.png)
+    ![select all data](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel.png)
     - In SPSS select "Descriptive Statistics" --> "Frequencies..."
     [![SPSS dropdown][spss-dropdown]](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/spss_analysis.png)
     - copy from the first spss frequency table the first and second column, to column G and H in excel.
