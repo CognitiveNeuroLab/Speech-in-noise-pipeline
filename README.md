@@ -14,7 +14,7 @@
 
 <h3 align="center">Speech-in-noise pipeline</h3>
 
-<h4 align="center">This repo will have a pipeline for pre-processing and doing stats on SiN data. In this repo will be code that has been in the lab for some year, I am not sure who made the code, but it works. </h4>
+<h4 align="center">This  repo will have a pipeline for pre-processing and doing stats on SiN data. In this repo will be code that has been in the lab for some year, I am not sure who made the code, but it works. </h4>
 
 
 **Table of Contents**
