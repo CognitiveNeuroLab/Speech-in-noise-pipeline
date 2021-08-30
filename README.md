@@ -22,6 +22,7 @@
 1. [About the project](#about-the-project)
 3. [What is in this repo](#what-is-in-this-repo)
   - [Pre-processing](#pre-processing)
+  - [Null-reponses](#null-responses)
 3. [License](#license)
 3. [Contact](#contact)
 3. [Acknowledgement](#acknowledgement)
@@ -54,7 +55,8 @@ To preprocess the data you need to make sure that the data is in good order. Thi
 1.  look for empty logfiles. 
     - A lot of participants will have more than 15 logfiles, this can be cause due to starting the scenario file in presentation too early or while the particpant wasn't ready or a lot of other reasons. You need to delete the empty ones and look fo the ones that are bigger or equal to 3 KB in size. After deleting the smaller files you need to re-do the count in which the files end, so that it's again 1-15. 
 2.  Make sure all the logfiles have the same date and same ID. It is also possible that the ID that is in the name of the logfile doesn't match the one when you open the logfile. 
-3.  Check if there are 20 responses in the excel file. Often people included the first stimulus which was a practice leading to 21 responses. In this case you can delete the first row. **20 responses equals 21 rows in excel**
+3.  Check if there are 20 responses in the excel file. Often people included the first stimulus which was a practice leading to 21 responses. In this case you can delete the first row. **20 responses equals 21 rows in excel**  
+After that look for however the experimenter noted a null-response. See [The next chapter](#null-responses) for more info. 
 4.  Update the Sin_sorting_files script.Change the following code
 ``` Matlab
 subject_id={'TheIDBeforeTheLogfiles'};
@@ -88,6 +90,11 @@ dir='C:\Users\dohorsth\Documents\GitHub\Speech-in-noise-pipeline\test\testsubjec
     - Add everything to excel and calculate correct percentages. You can use the formula: =(I2/H2)*100 and pull it down.  
     ![SPSS dropdown](https://github.com/CognitiveNeuroLab/Speech-in-noise-pipeline/blob/master/images/excel_final.PNG)
 7. repeat for each individual dataset.
+
+### Null-reponses
+Here we look at how many null-responses each participant gave. A null-response is whatever the experimenter wrote down when the participant didn't answer. Most often this is left empty, but in some cases the experimenter wrote something else (eg. "participant didn't responed"), in these cases just delete what was written there.
+
+The script loads the compileddata.xlsx file for each participant and looks if the participant has null-responses. It counts how often this happens and saves it. 
 
 <!-- LICENSE -->
 ## License
