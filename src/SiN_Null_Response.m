@@ -1,13 +1,13 @@
 % This script opens the compileddata.xlsx file of each person and find how
 % many null-responses each participant has. 
-% created by Douwe Horsthuis & Rinaldys on 8/30/2021
+% created by Douwe Horsthuis & Rinaldys Castillo on 8/30/2021
 clear variables
 
-home_path       = 'C:\Users\dohorsth\Desktop\SiN_test\';
-subject_list      = {'10385' '1151' '1830'};
-total_null_responses= num2cell(zeros(length(subject_list),2));
-
-
+home_path       = '\\data.einsteinmed.org\users\CNL Lab\Analysis\SiN\DATA\Finished\';
+subjects=dir(home_path); %load all the ID numbers based on folder name
+subjects(1:2) = []; %first 2 are not IDs
+subject_list= {subjects.name};
+total_null_responses= num2cell(zeros(length(subject_list),3));
 for s=1:length(subject_list)
     data_path = [home_path subject_list{s} '\'];
     % loading compileddata
@@ -21,6 +21,13 @@ for s=1:length(subject_list)
             null_response = null_response+1;
         end
     end
-    total_null_responses(s,:)=[subject_list(s), null_response];
+    %adding group type
+    if strcmp(subject_list{s}(1:2),'18') || strcmp(subject_list{s}(1:2),'11')
+        group='ASD';
+    else
+        group='Control';
+    end
+    total_null_responses(s,:)=[subject_list(s), null_response, group];
 end
 
+save([home_path 'total_null_responses'], 'total_null_responses')
